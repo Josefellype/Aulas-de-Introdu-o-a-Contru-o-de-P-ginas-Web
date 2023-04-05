@@ -1,7 +1,4 @@
-<style>
-    ul{
-        list-style: none;
-    }
+
     body{
         font: 12px Arial;
         background-color: #eee;
@@ -30,4 +27,6 @@
     form input:required:invalid{
         border-color: #b03535;
     }
-</style>
+    ul{
+        list-style: none;
+    }
