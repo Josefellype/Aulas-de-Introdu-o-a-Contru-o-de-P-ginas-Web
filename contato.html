@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="José Fellype Urias Noleto">
     <title>Contato</title>
+    <link rel="stylesheet" href="CSS\estiloContato.css">
 </head>
 <body>
     <h1>Como entrar em contato comigo</h1>
     <form action="">
-        <label for="nome">Seu nome:</label>
-        <input type="text" id="nome" name="nomeUsuario">
-        <br>
-        <br>
-        <label for="email">Seu email de contato:</label>
-        <input type="text" id="email" name="emailUsuario">
-        <br>
-        <br>
-        <label for="mensagem">Mensagem:</label>
-        <input type="text" id="mensagem" name="mensagemUsuario">
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
+            <ul>
+                <li>
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" id="nome" name="nomeUsuario" title="Informe aqui o seu nome!">
+                </li>
+            
+                <li>
+                    <label for="email">Email de contato:</label>
+                    <input type="email" id="email" name="emailUsuario" required pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ex: usuário@servidor.com"
+                    title="Informe um endereço de email!">
+                </li>
+        
+                <li>
+                    <label for="mensagem">Mensagem:</label>
+                    <input type="textarea" id="mensagem" name="mensagemUsuario" required title="Mande nos uma mensagem!">
+                </li>
+            </ul>
+                <input type="submit" value="Enviar" title="Enviar formulário.">
     </form>
 </body>
 </html>
